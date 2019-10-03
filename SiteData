@@ -1,0 +1,136 @@
+-------------------------------
+--                            -
+--    Digital-Black           -
+--    12/14/2018              -
+--    Digital-Black.sql       -
+--                            -
+-------------------------------
+
+create table sitedata
+(
+	Id			number(4)
+	,location	varchar(15)
+	,staffing	number(3)
+	);
+	
+insert into sitedata (id, location, staffing)
+	values ( 0002
+			,'Houston'
+			,56
+			);
+
+insert into sitedata (id, location, staffing)
+	values ( 0003
+			,'St. Louis'
+			,114
+			);
+
+insert into sitedata (id, location, staffing)
+	values ( 0004
+			,'Chicago'
+			,90
+			);
+
+insert into sitedata (id, location, staffing)
+	values ( 0005
+			,'Berkeley'
+			,40
+			);
+
+insert into sitedata (id, location, staffing)
+	values ( 0006
+			,'Atlanta'
+			,167
+			);
+			
+insert into sitedata (id, location, staffing)
+	values ( 0007
+			,'Washington'
+			,181
+			);
+
+insert into sitedata (id, location, staffing)
+	values ( 0008
+			,'London'
+			,85
+			);
+
+insert into sitedata (id, location, staffing)
+	values ( 0009
+			,'Manchester'
+			,62
+			);
+
+insert into sitedata (id, location, staffing)
+	values ( 0010
+			,'Liverpool'
+			,48
+			);
+
+insert into sitedata (id, location, staffing)
+	values ( 0011
+			,'Cardiff'
+			,110
+			);
+
+update sitedata
+	set id = 0000
+	where id = 0001;
+
+update sitedata
+	set id = 0001
+	where id = 0002;
+
+update sitedata
+	set id = 0002
+	where id = 0003;
+
+update sitedata
+	set id = 0003
+	where id = 0004;
+
+update sitedata
+	set id = 0004
+	where id = 0005;
+
+update sitedata
+	set id = 0005
+	where id = 0006;
+
+update sitedata
+	set id = 0006
+	where id = 0007;
+
+update sitedata
+	set id = 0007
+	where id = 0008;
+
+update sitedata
+	set id = 0008
+	where id = 0009;
+
+update sitedata
+	set id = 0009
+	where id = 00010;
+
+update sitedata
+	set id = 0010
+	where id = 0011;
+
+select * from sitedata
+
+select * from sitedata order by location asc;
+
+select * from sitedata order by id desc;
+
+select * from sitedata where staffing > 100;
+
+select count from sitedata;
+
+select count(staffing) from sitedata where id <= 10;
+
+delete from sitedata where id = 0010;
+
+delete from sitedata where id = 0009;
+
+delete from sitedata where id = 0008;
